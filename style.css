@@ -97,11 +97,20 @@ body {
         
       }
   
+      .grid-second-row-search-icon {
+        grid-column: 1;
+        grid-row: 2; 
+    
+        z-index: 2; /* Need otherwise search bar will cover icon */
+      }
+  
+  
       .grid-second-row {
         grid-column: 1 / 5;
         grid-row: 2;
         
       }
+  
   
       .grid-third-row-firstbutton {
         grid-column: 2 / 4;
@@ -136,7 +145,6 @@ body {
   
   /* SECOND ROW CONTENTS */ 
   .search-bar {
-    display: block; 
     width: 80%;
     height: 2.5rem;
     padding: 0.25rem 4rem; /* top-bottom and left-right, to give space for icon */
@@ -150,9 +158,18 @@ body {
   }
   
   
-  .search-bar:hover {
-    filter: drop-shadow(4px 4px 5px #ced4da);
-  }
+      .search-bar:hover {
+        filter: drop-shadow(4px 4px 5px #ced4da);
+      }
+  
+  
+    .search-icon {
+      display: block; 
+      margin-left: 20px; 
+      margin-top: 10px; 
+      z-index: 1; 
+     
+    }
   
   
   /* THIRD ROW CONTENTS */ 
@@ -314,9 +331,4 @@ body {
     vertical-align:middle;
   }
   
-  .search-icon {
-    position: absolute;
-    top: 294px;
-    left: 560px; 
   
-  }
