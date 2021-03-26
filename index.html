@@ -20,22 +20,112 @@
     <meta property='og:url' content='https://github.com/iVuDang/google-homepage'/>
     <meta property="og:type" content="website" />    
         
-    <link href="styles/pg1-home.css" rel="stylesheet">
+    <!-- IMPORTANT - need to ref our CSS -->
+    <link href="style.css" rel="stylesheet">
     
 </head>
 
 
 <!-- 2. THE BODY -->
 <body>
+  
     <header>
+      
+      <!-- Nav Bar -->
+      <div class="nav-flex-container">
+        
+          <div class="nav-flex-child-1">  
+              <ul class="nav-bar-left"> 
+                  <li> <a href=""> About </a> </li>
+                  <li> <a href=""> Store </a </li>
+               </ul>
+          </div>
 
+
+          <div class="nav-flex-child-2">  
+                <ul class="nav-bar-right"> 
+                  <li> <a href=""> Gmail </a> </li>
+                  <li> <a href=""> Images </a> </li>
+                  <li> <a href=""> <img class="square-icon" src="https://i.imgur.com/9JAcYhG.png" alt="square icon">  </a> </li>
+                  <li> <a href=""> <img class="square-icon" src="https://i.imgur.com/wteTVFB.png" alt="profile icon"> </a> </li>
+                </ul>
+          </div>
+        
+      </div>
+      
     </header>
 
     <main>
+      
+      <!-- 1st row - Google logo --> 
+      <div class="grid-box-container">
+        <div class="grid-first-row"> 
+            <img class="google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google logo pic"> 
+        </div>   
+        
+        
+        <!-- 2nd row - Search bar input --> 
+        <div class="grid-second-row">   
+          
+          <input class="search-bar" id="search-bar" type="text" autofocus> 
+          </input> <!-- autofocus to load blinker in search bar -->
+        
+        </div>  
+        
+        <img class="search-icon" src="https://i.imgur.com/b1X2xZT.png" alt="search icon"> 
+      
+        <!-- 3rd row -  first button  --> 
+        <div class="grid-third-row-firstbutton"> 
+          <input class="first-button" type="submit" value="Google Search" >
+        </div> 
+        
+      
+        <!-- 3rd row -  second button  --> 
+        <div class="grid-third-row-secondbutton"> 
+          <input class="second-button" type="submit" value="I'm Feeling Lucky" >
+        </div> 
+      
+      
+        <!-- 4th row - Offered in sentence  --> 
+        <div class="grid-fourth-row">
+          Google offered in:  <a class="language-link" href="https://www.youtube.com/user/iVuDang"> Francais </a> 
+        </div> 
+      </div>
+      
+      <!-- Bottom Tray -->
+      <div class="tray-flex-container">
+        
+          <div class="tray-flex-child-1">  
+              <ul class="tray-bar-left"> 
+                  <li> <a href=""> Advertising </a> </li>
+                  <li> <a href=""> Business </a </li>
+                  <li> <a href=""> How Search works</a </li>
+               </ul>
+          </div>
 
+
+          <div class="tray-flex-child-2">  
+                <ul class="tray-bar-right"> 
+                  <li> <a href=""> Privacy </a> </li>
+                  <li> <a href=""> Terms </a> </li>
+                  <li> <a href=""> Settings </a> </li>
+                </ul>
+          </div>
+        
+      </div>
+       
+           
+      <!-- Bottom Tray -->
+      <div class="country-flex-container">
+          Canada 
+      </div>   
+         
+      
     </main>
 </body>
 
+  
+  
 
 
 <!-- 3. THE FOOTER -->
