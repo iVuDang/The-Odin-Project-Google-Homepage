@@ -1,334 +1,332 @@
 /* GENERAL EFFECTS */
 
 body {
-    font-family: Arial, sans-serif; 
-    background-color: white;
-  }
+  font-family: Arial, sans-serif; 
+  background-color: white;
+}
+
+
+/* NAV BAR EFFECTS */
+
+.nav-flex-container {
+  display: flex; 
+  flex-direction: space-between; 
   
+  padding: 10px; 
   
-  /* NAV BAR EFFECTS */
+  position: fixed; /* to position at top */
+  width: 100%; 
+  left: 0px; 
+  top: 0px;
   
-  .nav-flex-container {
-    display: flex; 
-    flex-direction: space-between; 
-    
-    padding: 10px; 
-    
-    position: fixed; /* to position at top */
-    width: 100%; 
-    left: 0px; 
-    top: 0px;
-    
-  }
-  
-      .nav-flex-container a { /* we cannot apply this to li, must apply separately to <a> nature are links */
-         color: inherit; 
-         text-decoration: none;
-  
-      }
-  
-      .nav-flex-child-1 {
-        flex-grow: 1;
-        
-        display: flex; /* to align our text into the middle */
-        align-items: center; 
-        
-      }
-  
-      .nav-flex-child-2 {
-        flex-grow: 1; 
-        padding-right: 15px; /* spacing from the edge */
-    
-      }
-  
-      /* NAV BAR LINKS */
-      .nav-bar-left {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        
-        text-align: left;
-      }
-  
-      .nav-bar-right {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        
-        text-align: right;
-        
-      }
-  
-      .nav-flex-container li { /* all li elements within our nav-flex container */
-        display: inline-block;
-        
-        padding: 5px;
-        margin: 0 5px;
-        
-        color: #222222; 
-        font-size: 14px; 
-      }
-  
-              .nav-flex-container li:hover { /* all li elements within our nav-flex container */
-                 text-decoration: underline;
-              }
-  
-  
-  /* GRID BOX CONTAINER */
-  
-  .grid-box-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 2fr 1fr 1fr 1fr;
-    
-    gap: 20px; /* spacing between the rows */ 
-    
-    margin: auto; /* centers our google container */
-    margin-top: 150px; /* adds spacing from our nav bar */
-    width: 700px; /* master width - determines all elements within */
-  
-    
-    padding: 10px;
-  }
-  
-      .grid-first-row {
-        grid-column: 1 / 5;
-        grid-row: 1;
-        
-      }
-  
-      .grid-second-row-search-icon {
-        grid-column: 1;
-        grid-row: 2; 
-    
-        z-index: 2; /* Need otherwise search bar will cover icon */
-      }
-  
-  
-      .grid-second-row {
-        grid-column: 1 / 5;
-        grid-row: 2;
-        
-      }
-  
-  
-      .grid-third-row-firstbutton {
-        grid-column: 2 / 4;
-        grid-row: 3;
-        
-      }
-  
-      .grid-third-row-secondbutton {
-        grid-column: 3 / 4;
-        grid-row: 3;
-  
-      }
-  
-      .grid-fourth-row {
-        grid-column: 2 / 4;
-        grid-row: 4;
-  
-      }
-  
-  
-  /* FIRST ROW CONTENTS */ 
-  
-  .google-logo {
-    width: 300px;
-    
-    display: block; /* to center our google logo */ 
-    margin-left: auto;
-    margin-right: auto;
-  
-  }
-  
-  
-  /* SECOND ROW CONTENTS */ 
-  .search-bar {
-    width: 80%;
-    height: 2.5rem;
-    padding: 0.25rem 4rem; /* top-bottom and left-right, to give space for icon */
-    
-    border: 1px solid #ced4da;
-    border-radius: 2rem;
-    
-    display: block; /* to center our search bar */ 
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  
-      .search-bar:hover {
-        filter: drop-shadow(4px 4px 5px #ced4da);
-      }
-  
-  
-    .search-icon {
-      display: block; 
-      margin-left: 20px; 
-      margin-top: 10px; 
-      z-index: 1; 
-     
+}
+
+    .nav-flex-container a { /* we cannot apply this to li, must apply separately to <a> nature are links */
+       color: inherit; 
+       text-decoration: none;
+
     }
+
+    .nav-flex-child-1 {
+      flex-grow: 1;
+      
+      display: flex; /* to align our text into the middle */
+      align-items: center; 
+      
+    }
+
+    .nav-flex-child-2 {
+      flex-grow: 1; 
+      padding-right: 15px; /* spacing from the edge */
   
+    }
+
+    /* NAV BAR LINKS */
+    .nav-bar-left {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      
+      text-align: left;
+    }
+
+    .nav-bar-right {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      
+      text-align: right;
+      
+    }
+
+    .nav-flex-container li { /* all li elements within our nav-flex container */
+      display: inline-block;
+      
+      padding: 5px;
+      margin: 0 5px;
+      
+      color: #222222; 
+      font-size: 14px; 
+    }
+
+            .nav-flex-container li:hover { /* all li elements within our nav-flex container */
+               text-decoration: underline;
+            }
+
+
+/* GRID BOX CONTAINER */
+
+.grid-box-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 2fr 1fr 1fr 1fr;
   
-  /* THIRD ROW CONTENTS */ 
-  .first-button {
-    width: 150px;
-    height: 40px;
-    background: #f8f9fa;
-    
-    border-radius: 2px;
-    border-style: none; 
-    cursor: pointer;
-    
-    display: block; /* to center our search bar */ 
-    margin-left: 20px;
+  gap: 20px; /* spacing between the rows */ 
+  
+  margin: auto; /* centers our google container */
+  margin-top: 150px; /* adds spacing from our nav bar */
+  width: 700px; /* master width - determines all elements within */
+
+  
+  padding: 10px;
+}
+
+    .grid-first-row {
+      grid-column: 1 / 5;
+      grid-row: 1;
+      
+    }
+
+    .grid-second-row-search-icon {
+      grid-column: 1;
+      grid-row: 2; 
+  
+      z-index: 2; /* Need otherwise search bar will cover icon */
+    }
+
+
+    .grid-second-row {
+      grid-column: 1 / 5;
+      grid-row: 2;
+      
+    }
+
+
+    .grid-third-row-firstbutton {
+      grid-column: 2 / 3;
+      grid-row: 3;
+      
+    }
+
+    .grid-third-row-secondbutton {
+      grid-column: 3 / 4;
+      grid-row: 3;
+
+    }
+
+    .grid-fourth-row {
+      grid-column: 2 / 4;
+      grid-row: 4;
+
+    }
+
+
+/* FIRST ROW CONTENTS */ 
+
+.google-logo {
+  width: 300px;
+  
+  display: block; /* to center our google logo */ 
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+/* SECOND ROW CONTENTS */ 
+.search-bar {
+  width: 80%;
+  height: 2.5rem;
+  padding: 0.25rem 4rem; /* top-bottom and left-right, to give space for icon */
+  
+  border: 1px solid #ced4da;
+  border-radius: 2rem;
+  
+  display: block; /* to center our search bar */ 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+    .search-bar:hover {
+      filter: drop-shadow(4px 4px 5px #ced4da);
+    }
+
+
+  .search-icon {
+    display: block; 
+    margin-left: 20px; 
+    margin-top: 10px; 
+    z-index: 1; 
   }
+
+
+/* THIRD ROW CONTENTS */ 
+.first-button {
+  width: 150px;
+  height: 40px;
+  background: #f8f9fa;
   
-        .first-button:hover {
-          border: 2px solid darkgrey;
-        }
+  border-radius: 2px;
+  border-style: none; 
+  cursor: pointer;
   
-        .first-button:visited {
-          border: 2px solid #4285f4;
-        }
-  
-  .second-button {
-    width: 150px;
-    height: 40px;
-    background: #f8f9fa;
-    
-    border-radius: 2px;
-    border-style: none; 
-    cursor: pointer;
-    
-    display: block; /* to center our search bar */ 
-    margin-left: 5px;
-  }
-  
-      .second-button:hover {
+  display: block; /* to position our button */ 
+  margin-left: 20px;
+}
+
+      .first-button:hover {
         border: 2px solid darkgrey;
       }
-  
-      .second-button:visited {
-          border: 2px solid #4285f4;
+
+      .first-button:visited {
+        border: 2px solid #4285f4;
       }
-  /* FOURTH ROW CONTENTS */ 
+
+.second-button {
+  width: 150px;
+  height: 40px;
+  background: #f8f9fa;
   
-  .grid-fourth-row {
-    text-align: center; 
-  }
+  border-radius: 2px;
+  border-style: none; 
+  cursor: pointer;
   
-    .grid-fourth-row a{
-      text-decoration: none; 
+  display: block; /* to center our search bar */ 
+  margin-left: 5px;
+}
+
+    .second-button:hover {
+      border: 2px solid darkgrey;
     }
-  
-    .grid-fourth-row a:hover{
-      text-decoration: underline;
+
+    .second-button:visited {
+        border: 2px solid #4285f4;
     }
-  
-  
-  
-  /* BOTTOM TRAY */
-  .tray-flex-container {
-    display: flex; 
-    flex-direction: space-between; 
-    
-    padding: 15px; /* cushion - makes bar thicker */
-    
-    position: fixed; /* to position at bottom */
-    width: 100%; 
-    left: 0px; 
-    bottom: 0;
-    
-    background-color: #f2f2f2; 
-    
+/* FOURTH ROW CONTENTS */ 
+
+.grid-fourth-row {
+  text-align: center; 
+}
+
+  .grid-fourth-row a{
+    text-decoration: none; 
   }
-  
-      .tray-flex-container a { /* we cannot apply this to li, must apply separately to <a> nature are links */
-         color: inherit; 
-         text-decoration: none;
-     
-      }
-  
-  
-      .tray-flex-child-1 {
-        flex-grow: 1;
-        margin-left: 10px; /*spacing from the edge */
-  
-      }
-  
-      .tray-flex-child-2 {
-        flex-grow: 1; 
-        margin-right: 30px; /*spacing from the edge */
-        
-      }
-  
-      /* BOTTOM TRAY LINKS */
-      .tray-bar-left {
-        list-style-type: none;
-        margin: auto;
-        padding: 0;
-        
-        text-align: left;
-      }
-  
-      .tray-bar-right {
-        list-style-type: none;
-        margin: auto;
-        padding: 0;
-        
-        text-align: right;
-        
-      }
-  
-      .tray-flex-container li { /* all li elements within our tray-flex container */
-        display: inline-block;
-        
-        padding: 5px 10px; /* top-bottom and left-right */ 
-        margin: 0 5px;
-        
-        color: #6f6f6f; 
-        font-size: 14px; 
-      }
-  
-              .tray-flex-container li:hover { /* all li elements within our tray-flex container */
-                 text-decoration: underline;
-              }
-  
-  
-  
-  /* COUNTRY TRAY */
-  
-  .country-flex-container {
-    display: flex; 
-    flex-direction: flex-start; 
-    
-    padding-top: 15px; /* cushion - makes bar thicker */ 
-    padding-bottom: 15px; 
-    padding-left: 20px;  /* spacing from edge */
-    
-    position: fixed; /* to position at bottom */
-    width: 100%; 
-    left: 0px; 
-    bottom: 50px;
-    
-    background-color: #f2f2f2; 
-    
-    border-bottom: 2px solid #dadce0; 
-    
-    color: #6f6f6f;
+
+  .grid-fourth-row a:hover{
+    text-decoration: underline;
   }
+
+
+
+/* BOTTOM TRAY */
+.tray-flex-container {
+  display: flex; 
+  flex-direction: space-between; 
   
+  padding: 15px; /* cushion - makes bar thicker */
   
-  /* ICONS */ 
-  .square-icon{
-    vertical-align:middle;
-  }
+  position: fixed; /* to position at bottom */
+  width: 100%; 
+  left: 0px; 
+  bottom: 0px;
   
-  .profile-icon{
-    vertical-align:middle;
-  }
+  background-color: #f2f2f2; 
   
+}
+
+    .tray-flex-container a { /* we cannot apply this to li, must apply separately to <a> nature are links */
+       color: inherit; 
+       text-decoration: none;
+   
+    }
+
+
+    .tray-flex-child-1 {
+      flex-grow: 1;
+      margin-left: 10px; /*spacing from the edge */
+
+    }
+
+    .tray-flex-child-2 {
+      flex-grow: 1; 
+      margin-right: 30px; /*spacing from the edge */
+      
+    }
+
+    /* BOTTOM TRAY LINKS */
+    .tray-bar-left {
+      list-style-type: none;
+      margin: auto;
+      padding: 0;
+      
+      text-align: left;
+    }
+
+    .tray-bar-right {
+      list-style-type: none;
+      margin: auto;
+      padding: 0;
+      
+      text-align: right;
+      
+    }
+
+    .tray-flex-container li { /* all li elements within our tray-flex container */
+      display: inline-block;
+      
+      padding: 5px 10px; /* top-bottom and left-right */ 
+      margin: 0 5px;
+      
+      color: #6f6f6f; 
+      font-size: 14px; 
+    }
+
+            .tray-flex-container li:hover { /* all li elements within our tray-flex container */
+               text-decoration: underline;
+            }
+
+
+
+/* COUNTRY TRAY */
+
+.country-flex-container {
+  display: flex; 
+  flex-direction: flex-start; 
   
+  padding-top: 15px; /* cushion - makes bar thicker */ 
+  padding-bottom: 15px; 
+  padding-left: 20px;  /* spacing from edge */
+  
+  position: fixed; /* to position at bottom */
+  width: 100%; 
+  left: 0px; 
+  bottom: 50px;
+  
+  background-color: #f2f2f2; 
+  
+  border-bottom: 2px solid #dadce0; 
+  
+  color: #6f6f6f;
+}
+
+
+/* ICONS */ 
+.square-icon{
+  vertical-align:middle;
+}
+
+.profile-icon{
+  vertical-align:middle;
+}
+
