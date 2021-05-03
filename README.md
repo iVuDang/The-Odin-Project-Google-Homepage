@@ -1,4 +1,4 @@
-# Project: Google Homepage
+# The Odin Project: Google Homepage
 Reference: https://www.theodinproject.com/lessons/html-css  
 
 ## Purpose: 
