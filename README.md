@@ -20,7 +20,7 @@ Easy Version: Build the Google.com homepage
 | Website | Link | 
 | ------------- | ------------- | 
 | YouTube tutorial | https://youtu.be/xsgqilAHmYk | 
-| CodePen demo | https://codepen.io/iVuDang/pen/poRyRrV | 
+| CodePen demo | https://codepen.io/iVuDang/full/poRyRrV | 
 
 <br />
 
