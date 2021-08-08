@@ -15,7 +15,7 @@ Easy Version: Build the Google.com homepage
 * Browser developer tools. 
 
 ### Outcome :white_check_mark:
-* I recreated the google homepage. 
+* I recreated the google homepage, and contributed a YouTube video tutorial. 
 
 | Website | Link | 
 | ------------- | ------------- | 
