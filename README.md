@@ -17,12 +17,12 @@ Easy Version: Build the Google.com homepage
 ### Outcome
 * I recreated the google homepage. 
 
-### Links 
-YouTube - tutorial link:
-https://youtu.be/xsgqilAHmYk
+### Links :white_check_mark:
 
-Codepen - solution link:
-https://codepen.io/iVuDang/pen/poRyRrV
+| Website | Link | 
+| ------------- | ------------- | 
+| YouTube tutorial | https://youtu.be/xsgqilAHmYk | 
+| CodePen demo | https://codepen.io/iVuDang/pen/poRyRrV | 
 
 <br />
 
