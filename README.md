@@ -14,10 +14,8 @@ Easy Version: Build the Google.com homepage
 * GitHub
 * Browser developer tools. 
 
-### Outcome
+### Outcome :white_check_mark:
 * I recreated the google homepage. 
-
-### Links :white_check_mark:
 
 | Website | Link | 
 | ------------- | ------------- | 
