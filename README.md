@@ -4,6 +4,9 @@ Reference: https://www.theodinproject.com/lessons/html-css
 ## Purpose: 
 Easy Version: Build the Google.com homepage  
 
+## Preview:
+![Image of Google Preview](https://octodex.github.com/images/yaktocat.png)
+
 
 ### Technologies: 
 * HTML
