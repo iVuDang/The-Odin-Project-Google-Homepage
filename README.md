@@ -5,7 +5,7 @@ Reference: https://www.theodinproject.com/lessons/html-css
 Easy Version: Build the Google.com homepage  
 
 ## Preview:
-<img src="https://github.com/iVuDang/The-Odin-Project-Google-Homepage/blob/f946f377b1e5731179e15a7447fdaaba69b8dc79/GoogleHomepage-preview.png" width=100% height=100%>
+<img src="https://github.com/iVuDang/The-Odin-Project-Google-Homepage/blob/f946f377b1e5731179e15a7447fdaaba69b8dc79/GoogleHomepage-preview.png" width=75% height=75%>
 
 ### Technologies: 
 * HTML
